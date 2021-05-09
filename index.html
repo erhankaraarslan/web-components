@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Component</title>
+    <style>
+        h3 {
+            color: blue
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Film Uygulaması...</h3>
+
+    <movie-card title="The man from earth" poster="https://zeka-oyunlari.s3-eu-west-1.amazonaws.com/s5199h43fe82e9f25a52871797c3b3a9cf991cc6720dce.?1586698021">
+        <p slot="year">2001</p>
+        <p slot="type">Movie</p>
+    </movie-card>
+    <movie-card title="Hababam Sınıfı 1" poster="https://i.sozcu.com.tr/wp-content/uploads/2017/07/hababam-sinifi-1.jpg">
+        Bir Türk klasiği...
+    </movie-card>
+    <movie-card title="Captain Marvel" poster="https://upload.wikimedia.org/wikipedia/tr/8/84/Captain_Marvel_film.jpg">
+        Marvellerin sonuncusu...
+    </movie-card>
+
+    <script defer src="MovieCard.js"></script>
+
+</body>
+
+</html>
